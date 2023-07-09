@@ -1,0 +1,117 @@
+.footer_section {
+  background-color: var(--color-footer);
+}
+
+.footer_heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2rem;
+}
+
+.footer_heading h2 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 62px;
+  line-height: 75px;
+  text-align: center;
+  letter-spacing: -0.04em;
+}
+
+.footer_heading button {
+  text-align: center;
+  background-color: transparent;
+  outline: none;
+  color: #fff;
+  border: 2px #fff solid;
+  padding: 1rem 2rem;
+  font-family: "Gilroy-Medium";
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 10rem;
+}
+
+.footer_link {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+.footer_link .footer_link_col {
+  width: 250px;
+}
+
+.footer_link .footer_link_col img {
+  width: 118px;
+  height: 30px;
+  margin-bottom: 1rem;
+}
+
+.footer_link .footer_link_col p {
+  font-family: var(--font-family);
+  font-size: 12px;
+  line-height: 14px;
+  color: #ffffff;
+}
+
+.footer_link .footer_link_col h4 {
+  font-family: var(--font-family);
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.footer_link .footer_link_col ul li {
+  font-family: var(--font-family);
+  font-size: 12px;
+  line-height: 16px;
+  list-style: none;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width:550px) {
+    .footer_link {
+        grid-template-columns: 1fr !important; 
+        row-gap: 2rem;
+        justify-items: left;
+      }
+
+      .footer_heading h2 {
+        font-size: 24px;
+        line-height: 30px;
+      }
+
+      .footer_heading button{
+        padding: 0.75rem 1.25rem ;
+        font-size: 14px;
+        margin-bottom: 2rem;
+      }
+}
+
+@media screen and (max-width:950px) {
+    .footer_link {
+        grid-template-columns: 1fr 1fr 1fr  ;
+        row-gap: 2rem;
+        justify-items: center;
+        
+      }
+
+      .footer_heading h2 {
+        font-size: 24px;
+        line-height: 30px;
+      }
+
+      .footer_heading button{
+        padding: 0.75rem 1.25rem ;
+        font-size: 14px;
+        margin-bottom: 2rem;
+      }
+
+      .footer_link .footer_link_col {
+        width: 100%;
+      }
+}

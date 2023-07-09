@@ -1,0 +1,19 @@
+.section_brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width:1050px) {
+   .section_brand img {
+
+    width: 40px;
+
+   }
+
+   .section_brand{
+    gap: 1rem;
+   }
+}

@@ -1,0 +1,62 @@
+.gpt_feature h4 {
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 75px;
+  letter-spacing: -0.04em;
+  color: #ffffff;
+  position: relative;
+}
+
+.gpt_feature h4::before {
+  content: "";
+  position: absolute;
+  background: var(--gradient-bar);
+  width: 38px;
+  height: 3px;
+  top: 10px;
+  left: 0;
+}
+
+.gpt_feature p {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--color-text);
+}
+
+@media screen and (max-width: 1050px) {
+  .gpt_feature h4 {
+    line-height: 40px;
+  }
+  .gpt_feature p {
+    line-height: 20px;
+    font-size: 12px;
+  }
+
+  .gpt_feature p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .gpt_feature h4 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 35px;
+    letter-spacing: -0.04em;
+    color: #ffffff;
+  }
+
+  .gpt_feature h4::before {
+    content: "";
+    position: absolute;
+    background: var(--gradient-bar);
+    width: 28px;
+    height: 2px;
+    top: 2.5px;
+    left: 0;
+  }
+}

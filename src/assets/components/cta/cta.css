@@ -1,0 +1,70 @@
+.cta_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--gradient-bar);
+  margin: 2rem 6rem;
+  padding: 2.5rem;
+  border-radius: 5px;
+}
+
+.cta__content p {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 30px;
+  color: black;
+}
+
+.cta__content h3 {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 45px;
+  color: #000000;
+}
+
+.cta_btn button {
+  width: 189.14px;
+  height: 59.4px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: white;
+  background-color: #000000;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 550px) {
+  .cta_section {
+    flex-direction: column;
+    margin: 2rem;
+    padding: 1.5rem;
+
+  }
+
+  .cta__content h3 {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+  }
+
+  .cta_btn button {
+    font-size: 14px;
+    width: 150.14px;
+    height: 40.4px;
+    border-radius: 50px;
+    line-height: 20px;
+    margin-top: 1rem;
+  }
+}
